@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".CadastroActivity">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_weight="20"
+        android:src="@drawable/baseline_person_add_24"
+        app:tint="@color/my_primary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:letterSpacing="0.08"
+        android:text="@string/crie_uma_conta"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="5"
+        android:background="@drawable/editar_texto_borda_redonda"
+        android:elevation="5dp"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/editar_texto_borda_redonda"
+            android:elevation="5dp"
+            android:hint="Usuário"
+            android:inputType="text"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="5"
+        android:background="@drawable/editar_texto_borda_redonda"
+        android:elevation="5dp"
+        android:hint="Senha"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_rounded"
+            android:text="Cadastrar" />
+        <!--        <ProgressBar-->
+        <!--            android:layout_width="32dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:indeterminateTint="@color/my_primary"-->
+        <!--            android:layout_gravity="center"/>-->
+    </LinearLayout>
+
+
+</LinearLayout>

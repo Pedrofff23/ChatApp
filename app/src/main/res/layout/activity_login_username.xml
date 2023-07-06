@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:weightSum="100"
+    tools:context=".LoginUsernameActivity">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_weight="20"
+        app:tint="@color/my_primary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:letterSpacing="0.08"
+        android:gravity="center"
+        android:text="Logue na sua conta"
+        android:textSize="25sp"
+        android:layout_weight="5"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/editar_texto_borda_redonda"
+            android:elevation="5dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/editar_texto_borda_redonda"
+        android:elevation="5dp"
+        android:hint="Senha"
+        android:inputType="text"
+        android:layout_weight="5"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_rounded"
+            android:text="Logar"
+            />
+        <Button
+            android:id="@+id/cadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_rounded"
+            android:text="Cadastrar"
+            />
+<!--        <ProgressBar-->
+<!--            android:layout_width="32dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:indeterminateTint="@color/my_primary"-->
+<!--            android:layout_gravity="center"/>-->
+    </LinearLayout>
+
+
+</LinearLayout>
